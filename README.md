@@ -1,5 +1,6 @@
 # Evaluating Generative Language Models in Information Extraction as Subjective Question Correction
 > Modern Large Language Models (LLMs) have showcased remarkable prowess in various tasks necessitating sophisticated cognitive behaviors. Notwithstanding, a paradoxical performance discrepancy is observed, where these models underperform in seemingly elementary tasks like relation extraction and event extraction due to two issues in conventional evaluation. The imprecision of existing evaluation metrics that struggle to effectively gauge semantic consistency between model outputs and ground truth. The inherent incompleteness of evaluation benchmarks, primarily due to restrictive human annotation schemas, resulting in underestimated LLM performances. Inspired by the principles in subjective question correction, we propose a new evaluation method, SQC-SCORE. This method innovatively utilizes LLMs, fine-tuned through subjective question correction data, to refine matching between model outputs and golden labels. Additionally, by incorporating a Natural Language Inference (NLI) model, SQC-SCORE enriches golden labels, addressing benchmark incompleteness by acknowledging correct yet previously omitted answers. Results on three information extraction tasks show that SQC-SCORE is more preferred by human annotators than the baseline methods. Utilizing SQC-SCORE, we conduct a comprehensive evaluation of the state-of-the-art LLMs and provide insights for future research for information extraction.
+
 This is the accompanying code & data for the paper **Evaluating Generative Language Models in Information Extraction as Subjective Question Correction**.
 ## Preliminary Requirements
 Make sure you have access to Llama weights through [Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf).
@@ -19,8 +20,8 @@ After obtaining the dataset, feel free to use our instructions listed in the App
 You can use your own dataset for evaluation. Make sure that each record in the datasets should be in the form below.
 ```
 record/
-├─  standard_answer/: original gold labels(each point assigned 2 marks). It should be a list of strings.
-├─  student_answer/: predictions of LLMs. It should be a list of 
+├─  standard_answer/: original gold labels(each point assigned 2 marks). It should be a list of triples represented in a list.
+├─  student_answer/: predictions of LLMs. It should be a list of triples represented in a list
 ├─  total_score/: total marks of the standard_answer
 ```
 ## Using SQC-Score
