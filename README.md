@@ -38,5 +38,3 @@ If you find our work useful, please consider citing SQC-Score:
       year={2024}
 }
 ```
-
-CUDA_VISIBLE_DEVICES=7 python sqc_score.py --in_file toy.jsonl --score_model ../MODELS/llama2-7b-hf-chat-student-only-improved  --out_dir ./out/results.json --do-nli True
