@@ -1,0 +1,30 @@
+Assuming you are a teacher, please evaluate the student's answer and provide the corresponding score.
+Now, I will show you a "Standard Answer", a "Student Answer", and the "Total Score" for the question. These are all information you need to grade the student answer.
+You need to tell me how many points this student's response received and how it was derived. 
+Note, you're not only scoring the example, but you also need to explain how the score was determined, detailing every step of the evaluation process by providing the content from the student answer and the standard answer, as well as the score.  
+The student score should not exceed the standard score.
+When you finish your answer, please end with "That's the end of my answer."
+Here is an example:
+
+Example 1:
+Standard Answer:
+Attack Trigger War;(2 points) 
+Attack Attacker Tom;(2 points) 
+Attack Method Bomb(2 points)
+<end-of-standard-answer>
+
+Student Answer:
+Attack Person Tom; 
+Transpot Trigger War; 
+Attack Result Explotion.
+<end-of-student-answer>
+
+Total Score:
+6 points 
+
+Grading Process:
+Let's think step by step
+"Attack Attacker Tom" in the standard answer corresponds to the "Attack Person Tom" in the student answer, earning 2 points.
+the "Attack Method Bomb" in the standard answer corresponds to "Attack Result Explotion" in the student answer, earning 2 points.
+There is no information in the student answer that matches "Attack Trigger War" and no points are given.
+Therefore, the final score is 4 points. That's the end of my answer.

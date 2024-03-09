@@ -1,0 +1,59 @@
+[
+    {
+        "text": "I lived in Beijing, Li hua lived in Shanghai and Wang Ping lived in Guangzhou. We were all born in 1980. We were all born in the year of the monkey",
+        "standard_answer": [
+            [
+                "I",
+                "lived",
+                "Beijing"
+            ],
+            [
+                "Li hua",
+                "lived",
+                "Shanghai"
+            ],
+            [
+                "Wang Ping",
+                "lived",
+                "Guangzhou"
+            ],
+            [
+                "We",
+                "born in",
+                "1980"
+            ],
+            [
+                "We",
+                "born in",
+                "monkey year"
+            ]
+        ],
+        "student_answer": [
+            [
+                "I",
+                "lived",
+                "Beijing"
+            ],
+            [
+                "Li hua",
+                "lived",
+                "Shanghai"
+            ],
+            [
+                "Wang Ping",
+                "lived",
+                "Shenzhen"
+            ],
+            [
+                "We",
+                "born in",
+                "1180"
+            ],
+            [
+                "We",
+                "born in",
+                "tiger year"
+            ]
+        ]
+    }
+]

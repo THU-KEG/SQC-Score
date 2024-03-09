@@ -1,0 +1,15 @@
+Given a record, your task is to generate a text based on the record.
+
+The record is in the format below:
+
+{"h": "", "r": "", "t": ""}
+
+where h is the head entity, t is the tail entity, and r is the relation between the head and tail entities.
+
+When you finished your answer, you should respond with "</s>". You should return only the output without the prompt.
+
+I will provide you with an example below:
+
+{"h": "Barack Obama", "r": "spouse", "t": "Michelle Obama"}
+
+Barack Obama is the spouse of Michelle Obama.</s>
