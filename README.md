@@ -1,5 +1,5 @@
 # Evaluating Generative Language Models in Information Extraction as Subjective Question Correction
-> Modern Large Language Models (LLMs) have showcased remarkable prowess in various tasks necessitating sophisticated cognitive behaviors. Notwithstanding, a paradoxical performance discrepancy is observed, where these models underperform in seemingly elementary tasks like relation extraction and event extraction due to two issues in conventional evaluation. The imprecision of existing evaluation metrics that struggle to effectively gauge semantic consistency between model outputs and ground truth. The inherent incompleteness of evaluation benchmarks, primarily due to restrictive human annotation schemas, resulting in underestimated LLM performances. Inspired by the principles in subjective question correction, we propose a new evaluation method, SQC-SCORE. This method innovatively utilizes LLMs, fine-tuned through subjective question correction data, to refine matching between model outputs and golden labels. Additionally, by incorporating a Natural Language Inference (NLI) model, SQC-SCORE enriches golden labels, addressing benchmark incompleteness by acknowledging correct yet previously omitted answers. Results on three information extraction tasks show that SQC-SCORE is more preferred by human annotators than the baseline methods. Utilizing SQC-SCORE, we conduct a comprehensive evaluation of the state-of-the-art LLMs and provide insights for future research for information extraction.
+> Modern Large Language Models (LLMs) have showcased remarkable prowess in various tasks necessitating sophisticated cognitive behaviors. Notwithstanding, a paradoxical performance discrepancy is observed, where these models underperform in seemingly elementary tasks like relation extraction and event extraction due to two issues in conventional evaluation. The imprecision of existing evaluation metrics that struggle to effectively gauge semantic consistency between model outputs and ground truth. The inherent incompleteness of evaluation benchmarks, is primarily due to restrictive human annotation schemas, resulting in underestimated LLM performances. Inspired by the principles of subjective question correction, we propose a new evaluation method, SQC-SCORE. This method innovatively utilizes LLMs, fine-tuned through subjective question correction data, to refine matching between model outputs and golden labels. Additionally, by incorporating a Natural Language Inference (NLI) model, SQC-SCORE enriches golden labels, addressing benchmark incompleteness by acknowledging correct yet previously omitted answers. Results on three information extraction tasks show that SQC-SCORE is more preferred by human annotators than the baseline methods. Utilizing SQC-SCORE, we conduct a comprehensive evaluation of the state-of-the-art LLMs and provide insights for future research for information extraction.
 
 This is the accompanying code & data for the paper **Evaluating Generative Language Models in Information Extraction as Subjective Question Correction**.
 ![pipeline](./figures/pipeline.png)
@@ -37,7 +37,9 @@ If you find our work useful, please consider citing SQC-Score:
 @article{fan2024sqc,
       title={Evaluating Generative Language Models in Information Extraction as Subjective Question Correction}, 
       author={Yuchen Fan, Yantao Liu, Zijun Yao, Jifan Yu, Lei Hou, Juanzi Li},
-      journal={},
-      year={2024}
+      year={2024},
+      eprint={2404.03532},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
